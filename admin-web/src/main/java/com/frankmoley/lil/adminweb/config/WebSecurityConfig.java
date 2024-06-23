@@ -33,7 +33,7 @@ public class WebSecurityConfig{
 
     @Bean
     public UserDetailsService userDetailsService() {
-        UserDetails user = User. withDefaultPasswordEncoder()
+        UserDetails user = User.withDefaultPasswordEncoder()
                 .username("user")
                 .password("password")
                 .roles("USER")
